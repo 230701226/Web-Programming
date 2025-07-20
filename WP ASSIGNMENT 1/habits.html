@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthy Tech Habits | Digital Wellbeing Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #faf5ff;
+      font-family: 'Inter', sans-serif;
+      color: #2d3748;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    h2 {
+      color: #6a1b9a;
+      font-size: 1.8rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #e9d8fd;
+      padding-bottom: 0.5rem;
+    }
+    .habit-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      counter-increment: habit-counter;
+      position: relative;
+      padding-left: 4rem;
+    }
+    .habit-card:before {
+      content: counter(habit-counter);
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      background: #6a1b9a;
+      color: white;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .habit-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    .habit-card h3 {
+      color: #6a1b9a;
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+    .pro-tip {
+      background: #f3e8ff;
+      border-left: 4px solid #9f7aea;
+      padding: 1.25rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+      font-weight: 500;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: #6a1b9a;
+      color: white;
+      border-radius: 6px;
+      transition: background 0.2s;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .back-link:hover {
+      background: #4a148c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧘 Healthy Tech Habits</h1>
+    <p>Science-backed routines for balanced digital living</p>
+  </header>
+  
+  <main>
+    <h2>Essential Digital Wellness Practices</h2>
+    
+    <div class="habit-card">
+      <h3>Morning Screen Freedom</h3>
+      <p>Start your day with at least one hour of screen-free time. This allows your brain to wake up naturally, reduces stress hormones, and sets a calm tone for your day. Try meditation, journaling, or a short walk instead.</p>
+    </div>
+    
+    <div class="habit-card">
+      <h3>Eye-Protecting Night Mode</h3>
+      <p>Activate night light filters after 8 PM to reduce blue light exposure. This helps maintain your natural circadian rhythm and improves sleep quality by supporting melatonin production.</p>
+    </div>
+    
+    <div class="habit-card">
+      <h3>Phone-Free Sleep Sanctuary</h3>
+      <p>Use a traditional alarm clock instead of your phone. Keeping your phone outside the bedroom eliminates the temptation for late-night scrolling and creates a true tech-free relaxation space.</p>
+    </div>
+    
+    <div class="pro-tip">
+      <p><strong>Pro Tip:</strong> During meals and breaks, keep your phone in another room or at least out of sight. Research shows this simple practice improves digestion, social connection quality, and mental refreshment.</p>
+    </div>
+    
+    <a href="index.html" class="back-link">← Return to Productivity Hub </a>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Digital Wellbeing Hub | Evidence-based digital wellness</p>
+  </footer>
+</body>
+</html>

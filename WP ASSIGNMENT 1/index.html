@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digital Wellbeing Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #1a1a1a;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #006d77;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 38px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      color: #444;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #007f8c;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .card a:hover {
+      color: #004c59;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: #777;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Digital Wellbeing Hub</h1>
+    <p>Your guide to focused, healthy, and productive digital living</p>
+  </header>
+
+  <div class="grid">
+    <div class="card" onclick="location.href='focus.html'">
+      <h2>🎯 Focus</h2>
+      <p>Learn how to master deep work and reduce distractions.</p>
+      <a href="focus.html">Explore Focus →</a>
+    </div>
+
+    <div class="card" onclick="location.href='screen.html'">
+      <h2>📱 Screen Time</h2>
+      <p>Control your screen usage and fight digital fatigue.</p>
+      <a href="screen.html">Manage Screen Time →</a>
+    </div>
+
+    <div class="card" onclick="location.href='habits.html'">
+      <h2>🧘 Healthy Habits</h2>
+      <p>Adopt routines that boost digital wellbeing.</p>
+      <a href="habits.html">View Habits →</a>
+    </div>
+
+    <div class="card" onclick="location.href='tools.html'">
+      <h2>🛠️ Tools</h2>
+      <p>Discover tools & apps to improve productivity.</p>
+      <a href="tools.html">See Tools →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Digital Wellbeing Hub </p>
+  </footer>
+
+</body>
+</html>
+
+

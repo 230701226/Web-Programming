@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Screen Time Management | Digital Wellbeing Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #007b80;
+      --secondary: #f8f9fa;
+      --accent: #6a1b9a;
+      --text: #2d3748;
+      --light-text: #4a5568;
+    }
+    body {
+      margin: 0;
+      background: #f8f9fa;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: #f8f9fa;
+      transform: skewY(-2deg);
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      position: relative;
+      z-index: 2;
+    }
+    main {
+      max-width: 900px;
+      margin: -30px auto 3rem;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 1.5rem 0;
+    }
+    th {
+      background: var(--primary);
+      color: white;
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+      background: white;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .tip-box {
+      background: #ebf8ff;
+      border-left: 4px solid var(--primary);
+      padding: 1.25rem;
+      margin: 2rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 6px;
+      transition: all 0.2s;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .back-link:hover {
+      background: #006266;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📱 Screen Time Management</h1>
+    <p class="tagline">Your guide to balanced digital usage</p>
+  </header>
+  
+  <main>
+    <div class="card">
+      <h2>Recommended Daily Screen Time</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Age Group</th>
+            <th>Maximum Recommended Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="emoji">🧒</span> Children (5–12)</td>
+            <td>&lt; 2 hours</td>
+          </tr>
+          <tr>
+            <td><span class="emoji">👱</span> Teens (13–18)</td>
+            <td>3–4 hours</td>
+          </tr>
+          <tr>
+            <td><span class="emoji">👩‍💼</span> Adults</td>
+            <td>&lt; 6 hours</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="tip-box">
+        <p><strong>💡 Pro Tip:</strong> Try a weekly screen detox challenge to refresh your mind. Start with one screen-free evening per week and gradually increase.</p>
+      </div>
+      
+      <h2>Screen Time Reduction Strategies</h2>
+      <ul style="padding-left: 1.25rem;">
+        <li style="margin-bottom: 0.75rem;">Set app limits and downtime schedules on your devices</li>
+        <li style="margin-bottom: 0.75rem;">Use grayscale mode to make screens less appealing</li>
+        <li style="margin-bottom: 0.75rem;">Keep devices out of the bedroom at night</li>
+        <li>Replace passive scrolling with intentional activities</li>
+      </ul>
+    </div>
+    
+    <a href="index.html" class="back-link">← Return to Productivity Hub </a>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Digital Wellbeing Hub | Your guide to focused, healthy, and productive digital living</p>
+  </footer>
+</body>
+</html>
